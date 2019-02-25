@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include location_and_settings *.css
+recursive-include location_and_settings *.csv
+recursive-include location_and_settings *.html
+recursive-include location_and_settings *.ico
+recursive-include location_and_settings *.js
+recursive-include location_and_settings *.json
+recursive-include location_and_settings *.md
+recursive-include location_and_settings *.png
+recursive-include location_and_settings *.py
+recursive-include location_and_settings *.svg
+recursive-include location_and_settings *.txt
+recursive-exclude location_and_settings *.pyc
