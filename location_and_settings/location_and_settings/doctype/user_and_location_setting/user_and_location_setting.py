@@ -18,3 +18,9 @@ def getUserLocation(user):
 def getUserWarehouse(user):
         warehouse = frappe.get_value('User And Location Setting', user, 'warehouse')
         return warehouse
+
+@frappe.whitelist(allow_guest=True)
+def getCustomer(user):
+        customer = frappe.get_value('User And Location Setting', user, 'customer')
+        return customer
+
