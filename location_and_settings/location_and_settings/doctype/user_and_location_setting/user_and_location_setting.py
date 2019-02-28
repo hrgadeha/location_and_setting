@@ -13,3 +13,8 @@ class UserAndLocationSetting(Document):
 def getUserLocation(user):
 	location = frappe.get_value('User And Location Setting', user, 'location')
 	return location
+
+@frappe.whitelist(allow_guest=True)
+def getUserWarehouse(user):
+        warehouse = frappe.get_value('User And Location Setting', user, 'warehouse')
+        return warehouse
